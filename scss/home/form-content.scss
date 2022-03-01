@@ -1,0 +1,252 @@
+.form-content {
+	max-width: $home-form-width;
+	// background-color: yellow;
+	min-height: 58px;
+	margin: $center;
+	margin-top: 40px;
+	padding-bottom: 100.4px;
+	// background-color: red;
+
+	h1 {
+		font-family: proximanova;
+		font-size: 60px;
+	}
+
+	.checkIn {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		width: 100%;
+
+		.ctext {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+			font-family: gill_sans;
+		}
+
+		.holder {
+			position: relative;
+			width: 80%;
+			display: flex;
+			justify-content: end;
+
+			.longerBox {
+				width: 80%;
+			}
+
+			.icon {
+				position: absolute;
+				top: 20px;
+				right: 10px;
+			}
+
+			input {
+				width: 100%;
+				height: 58px;
+				padding-left: 10px;
+				border: 2px solid $site-blue;
+				font-family: gill_sans;
+			}
+		}
+	}
+
+	.nameMail {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		width: 100%;
+
+		.holder {
+			position: relative;
+			width: 100%;
+
+			.short-box {
+				width: 103px;
+			}
+
+			.long-box {
+				width: 453px;
+			}
+
+			.icon {
+				position: absolute;
+				top: 20px;
+				right: 10px;
+			}
+
+			input {
+				width: 344px;
+				height: 58px;
+				padding-left: 10px;
+				border: 2px solid $site-blue;
+				font-family: gill_sans;
+			}
+		}
+	}
+
+	.tresHermanos {
+		width: 100%;
+		min-height: 58px;
+		// background-color: aqua;
+		margin: 0 auto;
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			.holder-holder {
+				margin-left: 81.5px;
+				width: 100%;
+			}
+
+			.holder {
+				position: relative;
+				display: flex;
+				width: 100%;
+				margin-left: 40px;
+
+				.short-box {
+					width: 103px;
+				}
+
+				.down-one {
+					position: absolute;
+					left: 180px;
+					top: 19px;
+				}
+				.down-two {
+					position: absolute;
+					left: 200px;
+					top: 19px;
+				}
+				.down-three {
+					position: absolute;
+					left: 190px;
+					top: 19px;
+				}
+			}
+			input {
+				width: 344px;
+				height: 58px;
+				padding-left: 10px;
+				border: 2px solid $site-blue;
+				font-family: gill_sans;
+			}
+
+			.adult {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 56.7px;
+				// background-color: red;
+			}
+		}
+	}
+
+	.message {
+		.holder {
+			margin-top: 20px;
+			width: 100%;
+			input {
+				height: 192px;
+				width: 100%;
+				border: 2px solid $site-blue;
+				font-family: gill_sans;
+			}
+		}
+	}
+
+	.submit {
+		height: 60.59px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		margin-top: 37px;
+		background-color: $site-blue;
+		border-radius: 30px;
+		font-family: gill_sans;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 812px) {
+	.form-content {
+		.nameMail {
+			display: flex;
+			flex-direction: column;
+
+			.holder {
+				margin: 0 auto;
+
+				.long-box {
+					width: 100%;
+				}
+
+				input {
+					width: 100%;
+					height: 58px;
+					margin-top: 10px;
+					padding-left: 10px;
+					border: 2px solid $site-blue;
+					font-family: gill_sans;
+				}
+			}
+
+			// background-color: orange;
+		}
+
+		.tresHermanos {
+			display: flex;
+			flex-direction: column;
+			margin-top: 10px;
+
+			.container {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+
+				.holder {
+					position: relative;
+					display: flex;
+					width: 100%;
+					margin-top: 10px;
+
+					.short-box {
+						width: 103px;
+					}
+
+					.down-one {
+						position: absolute;
+						left: 190px;
+						top: 19px;
+					}
+					.down-two {
+						position: absolute;
+						left: 190px;
+						top: 19px;
+					}
+					.down-three {
+						position: absolute;
+						left: 190px;
+						top: 19px;
+					}
+				}
+
+				.adult {
+					width: 50px;
+				}
+
+				.holder-holder {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+}
